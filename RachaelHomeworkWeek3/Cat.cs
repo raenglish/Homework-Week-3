@@ -15,10 +15,13 @@ namespace RachaelHomeworkWeek3
             get; set;
         }
 
+        public int AcceptablePetQuantity { get; set; }
+
         public Cat(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
+            AcceptablePetQuantity = (new Random()).Next(1, 21);
         }
 
         public string getCatName()
@@ -43,13 +46,13 @@ namespace RachaelHomeworkWeek3
                 if (answer == "yes")
                 {
                     
-                    if (x <= acceptedNumberOfPets())
+                    if (x <= AcceptablePetQuantity)
                     {
                         Console.WriteLine($"{getCatName()} really seems to be enjoying that.");
                         x++;
                         Console.WriteLine($"You have pet {getCatName()} {x} times");
                     }
-                    else if (x > acceptedNumberOfPets())
+                    else if (x > AcceptablePetQuantity)
                     {
                         Console.WriteLine($"OH SHIT BRO, I don't think {getCatName()} likes that very much!!");
                         Console.WriteLine("*Your hand has been ripped to shreds and you're bleeding all over the carpet*");
@@ -58,12 +61,12 @@ namespace RachaelHomeworkWeek3
                     }
 
                 }
-                else if (answer == "no" && x == acceptedNumberOfPets())
+                else if (answer == "no" && x == AcceptablePetQuantity)
                 {
                     Console.WriteLine($"{getCatName()} seemed to really enjoy that. You're the best!");
                     enough = true;
                 }
-                else if (answer == "no" && x < acceptedNumberOfPets())
+                else if (answer == "no" && x < AcceptablePetQuantity)
                 {
                     Console.WriteLine($"{getCatName()} seems upset that you stopped petting them... maybe you should go apologize.");
                     enough = true;

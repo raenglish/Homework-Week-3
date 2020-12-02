@@ -13,7 +13,7 @@ namespace RachaelHomeworkWeek3
             Cat yourCat = new Cat(firstName, lastName);
             Console.WriteLine($"I hope you know how many pets {yourCat.getCatName()} enjoys! Let's play a game!");
             yourCat.petTheCat();
-
+            Console.ReadLine();
         }
     }
 }
