@@ -1,0 +1,13 @@
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.csprojAssemblyReference.cache
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.AssemblyInfoInputs.cache
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.AssemblyInfo.cs
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.csproj.CoreCompileInputs.cache
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\bin\Debug\netcoreapp3.1\RachaelHomeworkWeek3.exe
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\bin\Debug\netcoreapp3.1\RachaelHomeworkWeek3.deps.json
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\bin\Debug\netcoreapp3.1\RachaelHomeworkWeek3.runtimeconfig.json
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\bin\Debug\netcoreapp3.1\RachaelHomeworkWeek3.runtimeconfig.dev.json
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\bin\Debug\netcoreapp3.1\RachaelHomeworkWeek3.dll
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\bin\Debug\netcoreapp3.1\RachaelHomeworkWeek3.pdb
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.dll
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.pdb
+C:\Users\Daryl\source\repos\RachaelHomeworkWeek3\RachaelHomeworkWeek3\obj\Debug\netcoreapp3.1\RachaelHomeworkWeek3.genruntimeconfig.cache
