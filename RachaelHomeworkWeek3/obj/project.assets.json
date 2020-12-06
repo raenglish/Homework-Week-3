@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Homework-Week-3\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3.csproj",
+      "projectUniqueName": "C:\\Users\\Daryl\\source\\repos\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3.csproj",
       "projectName": "RachaelHomeworkWeek3",
-      "projectPath": "C:\\Dev\\Homework-Week-3\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3.csproj",
+      "projectPath": "C:\\Users\\Daryl\\source\\repos\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3.csproj",
       "packagesPath": "C:\\Users\\Daryl\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Homework-Week-3\\RachaelHomeworkWeek3\\obj\\",
+      "outputPath": "C:\\Users\\Daryl\\source\\repos\\RachaelHomeworkWeek3\\RachaelHomeworkWeek3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daryl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

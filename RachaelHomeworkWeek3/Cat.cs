@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RachaelHomeworkWeek3
 {
-    class Cat
+    public class Cat
     {
         public string FirstName
         {
@@ -16,12 +16,13 @@ namespace RachaelHomeworkWeek3
         }
 
         public int AcceptablePetQuantity { get; set; }
-
+        int x = 0;
+        int catmood = 0;
         public Cat(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
-            AcceptablePetQuantity = (new Random()).Next(1, 21);
+            AcceptablePetQuantity = (new Random()).Next(1, 11);
         }
 
         public string getCatName()
@@ -29,15 +30,34 @@ namespace RachaelHomeworkWeek3
             return $"{FirstName} {LastName}";
         }
 
-        public int acceptedNumberOfPets()
+        public void getCatMood()
         {
-            var desiredPets = new Random();
-            return desiredPets.Next(1, 21);
+            if (catmood + 1 >= AcceptablePetQuantity)
+            {
+                Console.WriteLine($"{getCatName()} is looking feisty");
+            }
+            else if (catmood < AcceptablePetQuantity)
+            {
+                Console.WriteLine($"{getCatName()} seems to want more attention");
+            }
+       
+            
         }
 
+        public void giveCatTreat()
+        {
+            Console.WriteLine($" you give {getCatName()} a treat. They seem to forgive you.");
+            
+
+        }
+        /*public void restartGame()
+        {
+
+        }
+        */
         public void petTheCat()
         {
-            int x = 0;
+
             bool enough = false;
             do
             {
@@ -45,19 +65,31 @@ namespace RachaelHomeworkWeek3
                 string answer = Console.ReadLine();
                 if (answer == "yes")
                 {
-                    
+
                     if (x <= AcceptablePetQuantity)
                     {
-                        Console.WriteLine($"{getCatName()} really seems to be enjoying that.");
                         x++;
                         Console.WriteLine($"You have pet {getCatName()} {x} times");
+                        getCatMood();
+                        catmood++;
                     }
                     else if (x > AcceptablePetQuantity)
                     {
-                        Console.WriteLine($"OH SHIT BRO, I don't think {getCatName()} likes that very much!!");
-                        Console.WriteLine("*Your hand has been ripped to shreds and you're bleeding all over the carpet*");
-                        Console.WriteLine("You might want to get that checked out...");
-                        enough = true;
+                        Console.WriteLine($"{getCatName()} is angry at you and slaps your hand away.");
+                        Console.WriteLine("Would you like to give them a treat? (yes/no)");
+                        if (Console.ReadLine() == "yes")
+                        {
+                            giveCatTreat();
+                           /* Console.WriteLine("You have been forgiven. Would you like to go for another round of pets? (yes/no)");
+                            string playAgainAnswer= Console.ReadLine();
+                            restartGame();*/
+                            enough = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("You must now endure a day of shunning.");
+                            enough = true;
+                        }
                     }
 
                 }
