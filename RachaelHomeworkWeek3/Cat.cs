@@ -32,9 +32,13 @@ namespace RachaelHomeworkWeek3
 
         public void getCatMood()
         {
-            if (catmood + 1 >= AcceptablePetQuantity)
+            if (catmood > AcceptablePetQuantity)
             {
                 Console.WriteLine($"{getCatName()} is looking feisty");
+            }
+            else if( catmood == AcceptablePetQuantity)
+            {
+                Console.WriteLine($"Cat happy.");
             }
             else if (catmood < AcceptablePetQuantity)
             {
@@ -62,8 +66,8 @@ namespace RachaelHomeworkWeek3
                     {
                         numberOfPets++;
                         Console.WriteLine($"You have pet {getCatName()} {numberOfPets} times");
-                        getCatMood();
                         catmood++;
+                        getCatMood();
                     }
                     else if (numberOfPets > AcceptablePetQuantity)
                     {
