@@ -45,9 +45,8 @@ namespace RachaelHomeworkWeek3
                 Console.WriteLine($"{getCatName()} seems to want more attention");
             }
         }
-
-            
-
+          
+                
 
 
         public void giveCatTreat()
