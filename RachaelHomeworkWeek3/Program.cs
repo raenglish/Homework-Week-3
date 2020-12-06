@@ -12,7 +12,22 @@ namespace RachaelHomeworkWeek3
             string lastName = Console.ReadLine();
             Cat yourCat = new Cat(firstName, lastName);
             Console.WriteLine($"I hope you know how many pets {yourCat.getCatName()} enjoys! Let's play a game!");
-            yourCat.petTheCat();
+            bool isFinishedPlaying = false;
+            while(!isFinishedPlaying)
+            {
+                yourCat.petTheCat();
+                Console.WriteLine("Would you like to play again? (yes/no)");
+                string userInput = Console.ReadLine();
+                userInput = userInput.ToLower();
+                if (userInput == "yes")
+                {
+                    yourCat = new Cat(firstName, lastName);
+                } else
+                {
+                    isFinishedPlaying = true;
+                }
+            }
+            
             Console.ReadLine();
         }
     }

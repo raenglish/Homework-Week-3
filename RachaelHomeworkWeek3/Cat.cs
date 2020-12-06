@@ -16,7 +16,7 @@ namespace RachaelHomeworkWeek3
         }
 
         public int AcceptablePetQuantity { get; set; }
-        int x = 0;
+        int numberOfPets = 0;
         int catmood = 0;
         public Cat(string firstName, string lastName)
         {
@@ -40,49 +40,38 @@ namespace RachaelHomeworkWeek3
             {
                 Console.WriteLine($"{getCatName()} seems to want more attention");
             }
-       
-            
         }
 
         public void giveCatTreat()
         {
             Console.WriteLine($" you give {getCatName()} a treat. They seem to forgive you.");
-            
-
         }
-        /*public void restartGame()
-        {
 
-        }
-        */
         public void petTheCat()
         {
-
             bool enough = false;
             do
             {
                 Console.WriteLine($"Would you like to pet {getCatName()}? (yes/no)");
                 string answer = Console.ReadLine();
+                answer = answer.ToLower();
                 if (answer == "yes")
                 {
 
-                    if (x <= AcceptablePetQuantity)
+                    if (numberOfPets <= AcceptablePetQuantity)
                     {
-                        x++;
-                        Console.WriteLine($"You have pet {getCatName()} {x} times");
+                        numberOfPets++;
+                        Console.WriteLine($"You have pet {getCatName()} {numberOfPets} times");
                         getCatMood();
                         catmood++;
                     }
-                    else if (x > AcceptablePetQuantity)
+                    else if (numberOfPets > AcceptablePetQuantity)
                     {
                         Console.WriteLine($"{getCatName()} is angry at you and slaps your hand away.");
                         Console.WriteLine("Would you like to give them a treat? (yes/no)");
                         if (Console.ReadLine() == "yes")
                         {
                             giveCatTreat();
-                           /* Console.WriteLine("You have been forgiven. Would you like to go for another round of pets? (yes/no)");
-                            string playAgainAnswer= Console.ReadLine();
-                            restartGame();*/
                             enough = true;
                         }
                         else
@@ -93,12 +82,12 @@ namespace RachaelHomeworkWeek3
                     }
 
                 }
-                else if (answer == "no" && x == AcceptablePetQuantity)
+                else if (answer == "no" && numberOfPets == AcceptablePetQuantity)
                 {
                     Console.WriteLine($"{getCatName()} seemed to really enjoy that. You're the best!");
                     enough = true;
                 }
-                else if (answer == "no" && x < AcceptablePetQuantity)
+                else if (answer == "no" && numberOfPets < AcceptablePetQuantity)
                 {
                     Console.WriteLine($"{getCatName()} seems upset that you stopped petting them... maybe you should go apologize.");
                     enough = true;
